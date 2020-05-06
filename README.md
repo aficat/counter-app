@@ -17,3 +17,5 @@ Tests for:
 - Functions
 - Snapshots Renders
 - Interations
+
+![Counter App Homepage](https://i.pinimg.com/originals/aa/32/c1/aa32c11cbd35e7687aa6eb234a0f4885.jpg)
