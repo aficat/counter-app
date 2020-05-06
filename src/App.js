@@ -21,13 +21,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container" style={{ paddingTop: 50 }}>
+      <div className="container" style={{ paddingTop: 50 }} align="center">
         <Jumbotron>
+          <h1>Counter App</h1>
           <h4>Count: {this.state.count}</h4>
           <br />
-          <Button className="increment" onClick={this.increment}>Increment</Button>
+          <Button id="increment" onClick={this.increment}>Increment</Button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Button className="decrement" onClick={this.decrement}>Decrement</Button>
+          <Button id="decrement" onClick={this.decrement}>Decrement</Button>
         </Jumbotron>
       </div>
     )

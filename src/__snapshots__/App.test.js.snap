@@ -1,22 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches the snapshot 1`] = `
-<div>
-  <p>
-    Count: 
-    0
-  </p>
-  <button
-    className="increment"
-    onClick={[Function]}
+<div
+  align="center"
+  className="container"
+  style={
+    Object {
+      "paddingTop": 50,
+    }
+  }
+>
+  <div
+    className="jumbotron"
   >
-    Increment
-  </button>
-  <button
-    className="decrement"
-    onClick={[Function]}
-  >
-    Decrement
-  </button>
+    <h1>
+      Counter App
+    </h1>
+    <h4>
+      Count: 
+      0
+    </h4>
+    <br />
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="increment"
+      onClick={[Function]}
+      type="button"
+    >
+      Increment
+    </button>
+         
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      id="decrement"
+      onClick={[Function]}
+      type="button"
+    >
+      Decrement
+    </button>
+  </div>
 </div>
 `;

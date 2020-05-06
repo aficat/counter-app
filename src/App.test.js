@@ -13,23 +13,29 @@ it('renders without crashing', () => {
 describe('App component', () => {
   it('starts with a count of 0', () => {
     const wrapper = shallow(<App />);
-    const text = wrapper.find('p').text();
+    const text = wrapper.find('h1').text();
+    expect(text).toEqual('Counter App');
+  });
+
+  it('starts with a count of 0', () => {
+    const wrapper = shallow(<App />);
+    const text = wrapper.find('h4').text();
     expect(text).toEqual('Count: 0');
   });
 
   it('increments count by 1 when the increment button is clicked', () => {
     const wrapper = shallow(<App />);
-    const incrementBtn = wrapper.find('button.increment');
+    const incrementBtn = wrapper.find('#increment');
     incrementBtn.simulate('click');
-    const text = wrapper.find('p').text();
+    const text = wrapper.find('h4').text();
     expect(text).toEqual('Count: 1');
   });
 
   it('decrements count by 1 when the decrement button is clicked', () => {
     const wrapper = shallow(<App />);
-    const decrementBtn = wrapper.find('button.decrement');
+    const decrementBtn = wrapper.find('#decrement');
     decrementBtn.simulate('click');
-    const text = wrapper.find('p').text();
+    const text = wrapper.find('h4').text();
     expect(text).toEqual('Count: -1');
   });
 });
